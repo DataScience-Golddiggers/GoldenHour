@@ -66,6 +66,14 @@ endog = log_return.loc[exog_lagged.index]
    - Stage 1: ARIMA(p,0,q) endogenous only
    - Stage 2: SARIMAX(p,0,q)(P,D,Q,5) with lagged exogenous variables
    - Advanced: ARIMA-GARCH hybrid for volatility clustering
+   - Advanced: LSTM for deep learning comparison
+
+### Forecast Horizon
+**Target**: 5-day ahead predictions (one trading week)
+- Use `forecast(steps=5)` for multi-step forecasting
+- For walk-forward validation, predict 5 days ahead at each step
+- Exogenous variables: Need values for t+1 through t+5 (use lagged approach consistently)
+- Alternative strategy: Iterative 1-step forecasts (predict t+1, use it to predict t+2, etc.)
    - Advanced: LSTM for advanced pattern capture
 
 ### Validation Requirements
@@ -120,10 +128,12 @@ When implementing statistical procedures, cross-reference this document for theo
 
 ## Development Workflow
 1. **Data Loading**: Load CSV, validate GPR against official source, set DatetimeIndex with freq='B'
-2. **Preprocessing**: Calculate log returns, engineer lagged features
-3. **Stationarity**: Run ADF tests, document results in tables
-4. **Model Selection**: Use auto_arima to find optimal (p,q,P,Q)
-5. **Training**: Fit SARIMAX with lagged exog on train set
+## Implementation Details
+- **Language**: Python (primary implementation language)
+- **Notebooks**: Store analysis notebooks in `notebooks/` directory
+- **Utilities**: Place reusable functions in `utility/` directory (data loading, feature engineering, model evaluation)
+- **Models**: Save trained model artifacts to `models/` directory
+- **Data Frequency**: Daily prices only (no intraday/hourly data) - calendar dates don't affect analysis since only daily close prices are used
 6. **Validation**: Walk-forward on test set, compute RMSE/MAE on prices
 7. **Diagnostics**: Check residuals for ARCH effects (ACF of squared residuals)
 8. **Extension**: If volatility clustering detected, implement ARIMA-GARCH hybrid
