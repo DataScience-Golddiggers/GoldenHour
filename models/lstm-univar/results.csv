@@ -1,0 +1,2 @@
+model,rmse,mae,n_predictions,lookback,forecast_horizon,lstm_units_1,lstm_units_2,device,validation_method
+LSTM_Univar,32.68822979474151,21.99365756527834,2105,20,5,64,32,mps,forward_fill

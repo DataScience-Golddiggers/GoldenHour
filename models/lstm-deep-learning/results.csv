@@ -1,2 +1,0 @@
-model,rmse,mae,n_predictions,lookback,forecast_horizon,lstm_units_1,lstm_units_2
-LSTM,18.660753774974665,12.665163397666799,10550,20,5,64,32

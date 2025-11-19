@@ -1,2 +1,2 @@
 model,rmse,mae,n_predictions,lookback,forecast_horizon,n_features,features,lstm_units_1,lstm_units_2,device,validation_method,exogenous_variables
-LSTM_Multivariate_GPRD,18.442876592623076,12.475478389563325,1940,20,5,5,"GOLD_LOG_RETURN, GPRD_LAGGED, RSI_LAGGED, SMA20_LAGGED, VOLATILITY_LAGGED",64,32,mps,forward_fill,"GPRD, RSI, SMA20, Volatility (all lagged)"
+LSTM_Multivariate_GPRD,32.77633381514248,21.8776749379454,1940,20,5,5,"GOLD_LOG_RETURN, GPRD_LAGGED, RSI_LAGGED, SMA20_LAGGED, VOLATILITY_LAGGED",64,32,mps,forward_fill,"GPRD, RSI, SMA20, Volatility (all lagged)"

@@ -1,2 +1,0 @@
-model,rmse,mae,n_predictions,lookback,forecast_horizon,lstm_units_1,lstm_units_2,device,validation_method
-LSTM_PyTorch_ForwardFill,18.560709967787858,12.615680300434528,2105,20,5,64,32,mps,forward_fill
