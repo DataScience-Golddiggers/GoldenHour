@@ -1,5 +1,20 @@
 # GoldenHour
 
+<div style="height; overflow:hidden; margin:auto; margin-bottom:2rem" align="center">
+  <img src="./docs/images/yay.png" style="width:100%; height:50%; object-fit:cover; object-position:center;" />
+</div>
+
+![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.12-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![VisualStudioCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Overleaf](https://img.shields.io/badge/Overleaf-47A141?style=for-the-badge&logo=Overleaf&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white)
+[![License](https://img.shields.io/badge/MIT-green?style=for-the-badge)](LICENSE)
+
+
 GoldenHour is Data Science's Course project focused on forecasting gold and silver prices using advanced time series models, including ARIMA, SARIMAX, ARIMA-GARCH, and LSTMs. The project investigates the "safe-haven" hypothesis, analyzing how precious metals respond to geopolitical risk and uncertainty.
 
 ## Project Structure
